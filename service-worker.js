@@ -1,4 +1,4 @@
-const CACHE_NAME = "hariom-calculator-v1";
+const CACHE_NAME = "hariom-calculator-v2";
 
 const FILES_TO_CACHE = [
   "./",
