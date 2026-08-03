@@ -98,3 +98,49 @@ body{
   .btn{ height:50px; font-size:16px; }
   .btn.equals{ height:104px; }
 }
+/* पूरे पेज का मार्जिन और पैडिंग जीरो करना */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* GitHub पर लाइव होने के बाद यह सीधा पाथ काम करेगा */
+    background-image: url('image_g0E0lk.png'); 
+    
+    /* फोटो पूरी स्क्रीन को कवर करेगी */
+    background-size: cover; 
+    
+    /* स्क्रॉल करने पर भी बैकग्राउंड अपनी जगह स्थिर रहेगा */
+    background-attachment: fixed; 
+    
+    /* फोटो स्क्रीन के हमेशा बीच में रहेगी */
+    background-position: center; 
+    
+    /* फोटो बार-बार रिपीट नहीं होगी */
+    background-repeat: no-repeat; 
+    
+    /* स्क्रीन की पूरी ऊंचाई सेट करना */
+    min-height: 100vh; 
+    font-family: Arial, sans-serif;
+}
+
+/* टेक्स्ट को फोटो के ऊपर साफ़ और सुंदर दिखाने के लिए स्टाइल */
+.main-content {
+    text-align: center;
+    color: white;
+    padding-top: 20%;
+    /* हल्का काला शेड ताकि सफेद आसमान के सामने भी टेक्स्ट साफ दिखे */
+    background: rgba(0, 0, 0, 0.4); 
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.5rem;
+}
