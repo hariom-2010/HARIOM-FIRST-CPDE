@@ -1,44 +1,33 @@
-const CACHE_NAME = "hariom-calculator-v2";
+const CACHE_NAME = "hariom-calculator-v3";
 
 const FILES_TO_CACHE = [
-  "./",
-  "./index.html",
-  "./styles.css",
-  "./script.js",
-  "./manifest.json",
-  "./icon.png"
+  "/",
+  "/index.html",
+  "/styles.css",
+  "/script.js",
+  "/manifest.json",
+  "/icon.png"
 ];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME)
-      .then((cache) => {
-        return cache.addAll(FILES_TO_CACHE);
-      })
+      .then((cache) => cache.addAll(FILES_TO_CACHE))
   );
+  self.skipWaiting();
 });
 
 
 self.addEventListener("activate", (event) => {
-  event.waitUntil(
-    caches.keys().then((keys) => {
-      return Promise.all(
-        keys.map((key) => {
-          if (key !== CACHE_NAME) {
-            return caches.delete(key);
-          }
-        })
-      );
-    })
-  );
+  event.waitUntil(self.clients.claim());
 });
 
 
 self.addEventListener("fetch", (event) => {
   event.respondWith(
     caches.match(event.request)
-      .then((response) => {
-        return response || fetch(event.request);
+      .then((cachedResponse) => {
+        return cachedResponse || fetch(event.request);
       })
   );
 });
