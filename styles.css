@@ -168,4 +168,10 @@ body {
 footer b {
     color: #00ff99;
 }
-
+.founder-footer {
+    width: 100%;
+    text-align: center;
+    margin-top: 70px;
+    padding: 25px;
+    clear: both;
+}
