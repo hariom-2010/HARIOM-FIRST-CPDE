@@ -106,8 +106,8 @@ body{
 }
 
 body {
-    /* आपकी फोटो का नाम */
-    background-image: url('image_g0E0lk.png'); 
+    /* आपकी व्हाट्सऐप वाली फोटो का सही नाम और एक्सटेंशन (.jpeg) */
+    background-image: url('WhatsApp Image 2026-08-02 at 1.29.05 PM.jpeg'); 
     
     /* फोटो पूरी स्क्रीन को कवर करेगी */
     background-size: cover; 
@@ -125,16 +125,17 @@ body {
     min-height: 100vh; 
     font-family: Arial, sans-serif;
     
-    /* आपके कैलकुलेटर को स्क्रीन के बिल्कुल बीच में लाने के लिए */
+    /* कैलकुलेटर को स्क्रीन के बीच में रखने के लिए */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* अगर आप चाहते हैं कि कैलकुलेटर के पीछे का हिस्सा थोड़ा धुंधला या डार्क दिखे */
+/* कैलकुलेटर बॉक्स के लिए स्टाइल */
 .calculator {
-    background: rgba(255, 255, 255, 0.85); /* हल्का सफेद पारदर्शी बैकग्राउंड */
+    background: rgba(255, 255, 255, 0.85); /* हल्का पारदर्शी सफेद बैकग्राउंड */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
 }
+
