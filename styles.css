@@ -138,4 +138,16 @@ body {
     border-radius: 10px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
 }
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background: #111;
+    color: white;
+    font-size: 16px;
+}
+
+footer b {
+    color: #00ff99;
+}
 
