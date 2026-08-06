@@ -1,4 +1,4 @@
-{
+ {
   "name": "HARIOM Calculator",
   "short_name": "Calculator",
   "start_url": "./",
@@ -14,3 +14,4 @@
     }
   ]
 }
+   
